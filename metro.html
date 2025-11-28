@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro 2033 - Начало</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="game-page" data-game="metro2033">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="gear"></div>
+            <div class="loader-text">Загрузка Metro...</div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <nav class="nav-menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-content">
+                <h2 class="menu-title">Серия Metro</h2>
+                <ul class="menu-items">
+                    <li><a href="./index.html" class="menu-link">Главная</a></li>
+                    <li><a href="./metro.html" class="menu-link active">Metro 2033</a></li>
+                    <li><a href="./last.html" class="menu-link">Metro: Last Light</a></li>
+                    <li><a href="./redux.html" class="menu-link">Metro Redux</a></li>
+                    <li><a href="./exodus.html" class="menu-link">Metro Exodus</a></li>
+                    <li><a href="./awakening.html" class="menu-link">Metro Awakening VR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="game-detail">
+        <div class="detail-hero">
+            <div class="hero-overlay"></div>
+            <div class="detail-content">
+                <h1 class="detail-title">Metro 2033</h1>
+                <div class="detail-meta">
+                    <span class="meta-item">Дата выхода: 16 марта 2010</span>
+                    <span class="meta-item">Разработчик: 4A Games</span>
+                    <span class="meta-item">Платформа: ПК, Xbox 360</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="detail-info">
+            <div class="info-container">
+                <div class="info-section">
+                    <h2>Об игре</h2>
+                    <p>Metro 2033 — это шутер от первого лица в жанре survival horror, основанный на романе «Метро 2033» российского писателя Дмитрия Глуховского.</p>
+                    <p>Действие игры происходит в разрушенном метро постапокалиптической Москвы. История рассказывает о молодом человеке Артёме, который должен пройти через туннели Метро, чтобы спасти свою родную станцию от загадочных Чёрных.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2>Ключевые особенности</h2>
+                    <ul class="features-list">
+                        <li>Погружающая постапокалиптическая атмосфера</li>
+                        <li>Геймплей в жанре survival horror с ограниченными ресурсами</li>
+                        <li>Уникальная механика противогаза</li>
+                        <li>Система моральных выборов, влияющая на концовку</li>
+                        <li>Атмосферные туннели и исследование поверхности</li>
+                        <li>Военные патроны используются в качестве валюты</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h2>Сюжет</h2>
+                    <p>2033 год. Целое поколение родилось и выросло под землёй, и осаждённые станции-города Метро борются за выживание друг с другом и с ужасами мутантов, которые поджидают снаружи.</p>
+                    <p>Вы — Артём, рождённый в последние дни перед пожаром, но выросший под землёй. Никогда не выходя за пределы своей станции-города, одно роковое событие запускает отчаянную миссию в сердце системы Метро, чтобы предупредить остатки человечества о страшной надвигающейся угрозе.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2>Критические отзывы</h2>
+                    <p>Metro 2033 получила в целом положительные отзывы за атмосферный дизайн, погружающий геймплей и уникальный сеттинг. Игру хвалили за напряжённые элементы survival horror и гнетущую атмосферу пост-ядерной Москвы.</p>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="./index.html" class="nav-btn">← Назад на главную</a>
+                    <a href="./last.html" class="nav-btn">Далее: Last Light →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Assistant Widget -->
+    <div class="assistant-widget">
+        <button class="assistant-button" id="assistantButton">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3>Путеводитель по Metro</h3>
+                <button class="close-assistant" id="closeAssistant">×</button>
+            </div>
+            <div class="assistant-content">
+                <div class="assistant-message">
+                    <p><strong>Metro 2033</strong></p>
+                    <p>Здесь всё началось. Metro 2033 знакомит вас с суровой реальностью жизни в московском метро после ядерной войны.</p>
+                    <p><strong>Советы для новичков:</strong></p>
+                    <ul>
+                        <li>Берегите военные патроны — это ваша валюта</li>
+                        <li>Следите за фильтрами противогаза на поверхности</li>
+                        <li>Скрытность часто лучше боя</li>
+                        <li>Обращайте внимание на моральные выборы для хорошей концовки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

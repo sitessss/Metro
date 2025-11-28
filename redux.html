@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Redux - Ремастеризованная коллекция</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="game-page" data-game="redux">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="gear"></div>
+            <div class="loader-text">Загрузка Metro...</div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <nav class="nav-menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-content">
+                <h2 class="menu-title">Серия Metro</h2>
+                <ul class="menu-items">
+                    <li><a href="./index.html" class="menu-link">Главная</a></li>
+                    <li><a href="./metro.html" class="menu-link">Metro 2033</a></li>
+                    <li><a href="./last.html" class="menu-link">Metro: Last Light</a></li>
+                    <li><a href="./redux.html" class="menu-link active">Metro Redux</a></li>
+                    <li><a href="./exodus.html" class="menu-link">Metro Exodus</a></li>
+                    <li><a href="./awakening.html" class="menu-link">Metro Awakening VR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="game-detail">
+        <div class="detail-hero">
+            <div class="hero-overlay"></div>
+            <div class="detail-content">
+                <h1 class="detail-title">Metro Redux</h1>
+                <div class="detail-meta">
+                    <span class="meta-item">Дата выхода: 26 августа 2014</span>
+                    <span class="meta-item">Разработчик: 4A Games</span>
+                    <span class="meta-item">Платформа: ПК, Xbox One, PS4, Switch</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="detail-info">
+            <div class="info-container">
+                <div class="info-section">
+                    <h2>О коллекции</h2>
+                    <p>Metro Redux — это полная коллекция из двух игр, включающая окончательные версии Metro 2033 и Metro: Last Light.</p>
+                    <p>Обе игры были полностью переработаны на последней и лучшей версии движка 4A Engine, привнеся потрясающую графику нового поколения, невероятную производительность и улучшения геймплея в эти культовые игры жанра.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2>Ключевые особенности</h2>
+                    <ul class="features-list">
+                        <li>Две полные игры — Metro 2033 Redux и Metro: Last Light Redux</li>
+                        <li>Переработаны на улучшенном движке 4A Engine</li>
+                        <li>Улучшенная графика с полным разрешением 1080p</li>
+                        <li>Геймплей 60 FPS на консолях</li>
+                        <li>Новые игровые режимы: Спартанский и Выживание</li>
+                        <li>Включён весь DLC-контент</li>
+                        <li>Улучшенное управление и механики геймплея</li>
+                        <li>Улучшенный ИИ и боевая система</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h2>Спартанский режим против режима Выживание</h2>
+                    <p><strong>Спартанский режим:</strong> Более ориентированный на экшен стиль игры с большим количеством ресурсов и упрощённым интерфейсом. Идеален для игроков, которые хотят испытать историю с меньшим давлением выживания.</p>
+                    <p><strong>Режим Выживание:</strong> Классический опыт Metro с ограниченными ресурсами, минимальными элементами интерфейса и максимальным напряжением. Каждый патрон на счёте в этом режиме.</p>
+                    <p>Обе игры можно проходить в любом из режимов, что позволяет настроить игровой опыт под себя.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2>Зачем играть в Redux?</h2>
+                    <p>Metro Redux — это окончательный способ испытать первые две игры Metro. С обновлённой графикой, улучшенной производительностью и усовершенствованными механиками геймплея, эти ремастеризованные версии — лучший способ войти во вселенную Metro.</p>
+                    <p>Весь сюжетный DLC включён, что даёт вам полный опыт Metro от начала до конца.</p>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="./last.html" class="nav-btn">← Предыдущее: Last Light</a>
+                    <a href="./exodus.html" class="nav-btn">Далее: Metro Exodus →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Assistant Widget -->
+    <div class="assistant-widget">
+        <button class="assistant-button" id="assistantButton">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3>Путеводитель по Metro</h3>
+                <button class="close-assistant" id="closeAssistant">×</button>
+            </div>
+            <div class="assistant-content">
+                <div class="assistant-message">
+                    <p><strong>Metro Redux</strong></p>
+                    <p>Ремастеризованная коллекция первых двух игр со значительными улучшениями.</p>
+                    <p><strong>Рекомендации:</strong></p>
+                    <ul>
+                        <li>Если вы новичок в Metro, начните с этого вместо оригиналов</li>
+                        <li>Попробуйте режим Выживание для аутентичного опыта Metro</li>
+                        <li>Спартанский режим отлично подходит для прохождений с фокусом на сюжет</li>
+                        <li>Обе игры поддерживают предпочтения вашего стиля игры</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro: Last Light - История продолжается</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="game-page" data-game="lastlight">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="gear"></div>
+            <div class="loader-text">Загрузка Metro...</div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <nav class="nav-menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-content">
+                <h2 class="menu-title">Серия Metro</h2>
+                <ul class="menu-items">
+                    <li><a href="./index.html" class="menu-link">Главная</a></li>
+                    <li><a href="./metro.html" class="menu-link">Metro 2033</a></li>
+                    <li><a href="./last.html" class="menu-link active">Metro: Last Light</a></li>
+                    <li><a href="./redux.html" class="menu-link">Metro Redux</a></li>
+                    <li><a href="./exodus.html" class="menu-link">Metro Exodus</a></li>
+                    <li><a href="./awakening.html" class="menu-link">Metro Awakening VR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="game-detail">
+        <div class="detail-hero">
+            <div class="hero-overlay"></div>
+            <div class="detail-content">
+                <h1 class="detail-title">Metro: Last Light</h1>
+                <div class="detail-meta">
+                    <span class="meta-item">Дата выхода: 14 мая 2013</span>
+                    <span class="meta-item">Разработчик: 4A Games</span>
+                    <span class="meta-item">Платформа: ПК, Xbox 360, PS3</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="detail-info">
+            <div class="info-container">
+                <div class="info-section">
+                    <h2>Об игре</h2>
+                    <p>Metro: Last Light — продолжение игры Metro 2033, повествующее о дальнейшем путешествии Артёма через постапокалиптическую российскую пустошь.</p>
+                    <p>Действие происходит через год после событий Metro 2033. Игра следует за Артёмом, который ищет выжившего Чёрного и пытается разобраться с политическими потрясениями, угрожающими разорвать Метро на части.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2>Ключевые особенности</h2>
+                    <ul class="features-list">
+                        <li>Улучшенная механика скрытности и геймплея</li>
+                        <li>Улучшенная графика и атмосфера</li>
+                        <li>Новая система кастомизации оружия</li>
+                        <li>Более проработанный бой и искусственный интеллект</li>
+                        <li>Эмоциональное повествование и развитие персонажей</li>
+                        <li>Множественные концовки на основе выборов игрока</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h2>Сюжет</h2>
+                    <p>2034 год. Под руинами постапокалиптической Москвы, в туннелях Метро, остатки человечества осаждены смертельными угрозами извне и изнутри.</p>
+                    <p>Преследуемый чувством вины, Артём стоит на перепутье: должен ли он искать искупления за свои прошлые действия или принять суровую реальность Метро? Судьба Метро может снова оказаться в его руках.</p>
+                </div>
+
+                <div class="info-section">
+                    <h2>Улучшения по сравнению с 2033</h2>
+                    <p>Last Light усовершенствовала и улучшила оригинал практически во всех аспектах. Система скрытности была полностью переработана, чтобы дать игрокам больше тактических возможностей. Графический движок получил значительные улучшения, создавая ещё более атмосферные окружения.</p>
+                    <p>Повествование стало более сфокусированным и ориентированным на персонажей, с запоминающимися второстепенными персонажами и эмоционально насыщенными моментами на протяжении всего путешествия.</p>
+                </div>
+
+                <div class="navigation-buttons">
+                    <a href="./metro.html" class="nav-btn">← Предыдущее: Metro 2033</a>
+                    <a href="./redux.html" class="nav-btn">Далее: Metro Redux →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Assistant Widget -->
+    <div class="assistant-widget">
+        <button class="assistant-button" id="assistantButton">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3>Путеводитель по Metro</h3>
+                <button class="close-assistant" id="closeAssistant">×</button>
+            </div>
+            <div class="assistant-content">
+                <div class="assistant-message">
+                    <p><strong>Metro: Last Light</strong></p>
+                    <p>Прямое продолжение Metro 2033 с усовершенствованным геймплеем и эмоционально убедительной историей.</p>
+                    <p><strong>Что нового:</strong></p>
+                    <ul>
+                        <li>Улучшенная механика скрытности с проработанным ИИ врагов</li>
+                        <li>Возможности кастомизации оружия</li>
+                        <li>Более разнообразные окружения</li>
+                        <li>Более глубокие взаимодействия с персонажами</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

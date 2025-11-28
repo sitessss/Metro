@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серия игр Metro - Путешествие по Метро</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="gear"></div>
+            <div class="loader-text">Загрузка Metro...</div>
+        </div>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <nav class="nav-menu">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="menu-content">
+                <h2 class="menu-title">Серия Metro</h2>
+                <ul class="menu-items">
+                    <li><a href="./index.html" class="menu-link active">Главная</a></li>
+                    <li><a href="./metro.html" class="menu-link">Metro 2033</a></li>
+                    <li><a href="./last.html" class="menu-link">Metro: Last Light</a></li>
+                    <li><a href="./redux.html" class="menu-link">Metro Redux</a></li>
+                    <li><a href="./exodus.html" class="menu-link">Metro Exodus</a></li>
+                    <li><a href="./awakening.html" class="menu-link">Metro Awakening VR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">METRO</h1>
+                <p class="hero-subtitle">Выживи в Подземелье</p>
+                <p class="hero-description">Испытайте постапокалиптический мир Metro через пять революционных игр</p>
+            </div>
+        </div>
+
+        <!-- Game Grid -->
+        <section class="games-grid">
+            <a href="./metro.html" class="game-card" data-game="metro2033">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Metro 2033</h3>
+                    <p class="card-year">2010</p>
+                    <p class="card-desc">Начало путешествия</p>
+                </div>
+            </a>
+
+            <a href="./last.html" class="game-card" data-game="lastlight">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Metro: Last Light</h3>
+                    <p class="card-year">2013</p>
+                    <p class="card-desc">История продолжается</p>
+                </div>
+            </a>
+
+            <a href="./redux.html" class="game-card" data-game="redux">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Metro Redux</h3>
+                    <p class="card-year">2014</p>
+                    <p class="card-desc">Ремастеризованная коллекция</p>
+                </div>
+            </a>
+
+            <a href="./exodus.html" class="game-card" data-game="exodus">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Metro Exodus</h3>
+                    <p class="card-year">2019</p>
+                    <p class="card-desc">Путешествие за пределы Москвы</p>
+                </div>
+            </a>
+
+            <a href="./awakening.html" class="game-card" data-game="awakening">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3 class="card-title">Metro Awakening VR</h3>
+                    <p class="card-year">2024</p>
+                    <p class="card-desc">Погружающий VR-приквел</p>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <!-- Assistant Widget -->
+    <div class="assistant-widget">
+        <button class="assistant-button" id="assistantButton">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+        <div class="assistant-panel" id="assistantPanel">
+            <div class="assistant-header">
+                <h3>Путеводитель по Metro</h3>
+                <button class="close-assistant" id="closeAssistant">×</button>
+            </div>
+            <div class="assistant-content">
+                <div class="assistant-message">
+                    <p><strong>Добро пожаловать, выживший!</strong></p>
+                    <p>Я помогу вам ориентироваться во вселенной Metro.</p>
+                    <ul>
+                        <li><strong>Metro 2033</strong> - Начните отсюда для оригинальной истории</li>
+                        <li><strong>Metro: Last Light</strong> - Прямое продолжение 2033</li>
+                        <li><strong>Metro Redux</strong> - Ремастеризованные версии обеих игр</li>
+                        <li><strong>Metro Exodus</strong> - Эпическое путешествие по России</li>
+                        <li><strong>Metro Awakening VR</strong> - VR-приквел</li>
+                    </ul>
+                    <p>Нажмите на любую карточку игры, чтобы узнать больше!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
