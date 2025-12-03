@@ -1,6 +1,3 @@
-// Metro Game Series - JavaScript
-
-// Loading Screen
 window.addEventListener('load', () => {
     const loadingScreen = document.getElementById('loading-screen');
 
@@ -10,7 +7,6 @@ window.addEventListener('load', () => {
     }, 1500);
 });
 
-// Hamburger Menu
 const hamburger = document.getElementById('hamburger');
 const menuOverlay = document.getElementById('menuOverlay');
 
@@ -46,7 +42,6 @@ if (hamburger && menuOverlay) {
     });
 }
 
-// Assistant Widget
 const assistantButton = document.getElementById('assistantButton');
 const assistantPanel = document.getElementById('assistantPanel');
 const closeAssistant = document.getElementById('closeAssistant');
@@ -62,7 +57,6 @@ if (assistantButton && assistantPanel) {
         });
     }
 
-    // Close assistant when clicking outside
     document.addEventListener('click', (e) => {
         if (!assistantButton.contains(e.target) &&
             !assistantPanel.contains(e.target) &&
@@ -71,8 +65,6 @@ if (assistantButton && assistantPanel) {
         }
     });
 }
-
-// Game Cards Animation on Scroll
 const observeElements = () => {
     const gameCards = document.querySelectorAll('.game-card');
 
@@ -94,14 +86,12 @@ const observeElements = () => {
     });
 };
 
-// Call on page load
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', observeElements);
 } else {
     observeElements();
 }
 
-// Smooth Page Transitions
 const addPageTransitions = () => {
     const links = document.querySelectorAll('a:not([target="_blank"])');
 
@@ -128,7 +118,6 @@ const addPageTransitions = () => {
 
 addPageTransitions();
 
-// Parallax Effect for Hero Section
 const heroSection = document.querySelector('.hero-section, .detail-hero');
 
 if (heroSection) {
@@ -140,7 +129,6 @@ if (heroSection) {
     });
 }
 
-// Add glow effect to cards on hover
 const gameCards = document.querySelectorAll('.game-card');
 
 gameCards.forEach(card => {
@@ -149,7 +137,6 @@ gameCards.forEach(card => {
     });
 });
 
-// Cursor Trail Effect (optional cool effect)
 const createCursorTrail = () => {
     let mouseX = 0;
     let mouseY = 0;
@@ -186,7 +173,6 @@ const createCursorTrail = () => {
         }, 500);
     }
 
-    // Add CSS animation for trail
     const style = document.createElement('style');
     style.textContent = `
         @keyframes trailFade {
@@ -198,7 +184,6 @@ const createCursorTrail = () => {
     `;
     document.head.appendChild(style);
 
-    // Create trail effect on mouse move (throttled)
     let lastTrailTime = 0;
     document.addEventListener('mousemove', () => {
         const now = Date.now();
@@ -209,10 +194,6 @@ const createCursorTrail = () => {
     });
 };
 
-// Uncomment to enable cursor trail effect
-// createCursorTrail();
-
-// Add typing effect to loading text
 const typeWriter = (element, text, speed = 100) => {
     if (!element) return;
 
@@ -230,7 +211,6 @@ const typeWriter = (element, text, speed = 100) => {
     type();
 };
 
-// Easter egg: Konami code
 let konamiCode = [];
 const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
 
@@ -257,7 +237,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Atmospheric Particles Effect
 function createParticles() {
     const particleContainer = document.createElement('div');
     particleContainer.className = 'particle-container';
@@ -295,12 +274,10 @@ function createParticles() {
         particleContainer.appendChild(particle);
     }
 
-    // Create particles
     for (let i = 0; i < 30; i++) {
         createParticle();
     }
 
-    // Add animation
     const style = document.createElement('style');
     style.textContent = `
         @keyframes particleFall {
@@ -313,10 +290,10 @@ function createParticles() {
     document.head.appendChild(style);
 }
 
-// Initialize particles after page load
 setTimeout(createParticles, 2000);
 
 // Console message for developers
 console.log('%c Metro Series Website ', 'background: #d4af37; color: #0a0a0a; font-size: 20px; padding: 10px;');
 console.log('%c Welcome to the Metro universe! ', 'color: #d4af37; font-size: 14px;');
 console.log('%c Try the Konami code for a surprise! ', 'color: #8a8a8a; font-size: 12px;');
+
